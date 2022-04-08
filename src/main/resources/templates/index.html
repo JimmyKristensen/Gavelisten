@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gavelisten</title>
+    <script src="https://kit.fontawesome.com/4ef292df47.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"  href="/style.css">
+</head>
+<body>
+<!--Jimmy's kode-->
+    <header>
+        <a id="logo_and_title" href="index">
+            <img id="logo" src="https://cdn-icons-png.flaticon.com/512/172/172155.png">
+            <h1>Gavelisten</h1>
+        </a>
+
+        <!--https://www.w3schools.com/howto/howto_css_login_form.asp-->
+        <i onclick="document.getElementById('id01').style.display='block'" class="fa-solid fa-circle-thin fa-user fa-2x profil"></i>
+
+        <div id="id01" class="modal">
+
+            <form class="modal-content animate" action="login" method="POST">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                </div>
+
+                <div class="container">
+                    <h3>Login</h3>
+                    <div class="input-container">
+                        <i class="fa-solid fa-envelope icon"></i>
+                        <input class="input-field" type="text" placeholder="Indtast Email" name="email" required>
+                    </div>
+
+                    <div class="input-container">
+                        <i class="fa-solid fa-key icon"></i>
+                        <input class="input-field" type="password" placeholder="Indtast Password" name="password" required>
+                    </div>
+
+                    <div id="login_bottom">
+                        <a href="userCreation">Er du ikke bruger?</a>
+                        <button class="input-button" type="submit">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--https://www.w3schools.com/howto/howto_css_login_form.asp-->
+
+    </header>
+    <main>
+        <section id="forside_info">
+            <h2>Velkommen til Gavelisten</h2>
+            <p>Her kan du oprette ønskelister og dele dem med venner og familie!</p>
+        </section>
+    </main>
+    <footer>
+        <p>Gavelisten</p>
+        <p>Tlf: 33445566</p>
+        <p>Email: gavelisten@gmail.com</p>
+        <p>Private politik</p>
+    </footer>
+
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+<!--END Jimmy's kode-->
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Timmie's Kode-->
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet"  href="/style.css">
+    <script src="https://kit.fontawesome.com/4ef292df47.js" crossorigin="anonymous"></script>
+</head>
+<header>
+    <a id="logo_and_title" href="index">
+        <img id="logo" src="https://cdn-icons-png.flaticon.com/512/172/172155.png">
+        <h1>Gavelisten</h1>
+    </a>
+</header>
+<body>
+<fieldset div class="createUserBox">
+    <h2 class="createUserTitle">Create new user</h2>
+    <form action="/Get-Info" method="POST">
+
+        <div class="input-container">
+            <i class="fa-solid fa-user icon"></i>
+            <input class="input-field"  type="text" name="userName" id="userName" placeholder="Enter username" required>
+        </div>
+
+        <div class="input-container">
+            <i class="fa-solid fa-envelope icon"></i>
+            <input class="input-field"  type="text" name="mail" id="mail" placeholder="Enter mail" required>
+        </div>
+
+        <div class="input-container">
+            <i class="fa-solid fa-key icon"></i>
+            <input class="input-field" type="password" name="password" id="password"  placeholder="Enter password" required>
+        </div>
+        <input class="input-button" type="submit" value="Create User">
+        
+    </form>
+
+</fieldset>
+</body>
+<!--/Timmie's Kode-->
+</html>
